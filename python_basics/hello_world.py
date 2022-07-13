@@ -2,7 +2,7 @@
 # # print(v)
 
 # a=6
-# b=5
+# b=5p
 # print(a%b)
 
 # c=4
@@ -70,13 +70,50 @@
 
 
 
-grocery= ['toothpaste','biscuit','jam','brush']
-if 'book' in grocery:
-    print('yes')
-elif 'make' in grocery:
-    print('noted')
-else:
-    print('love')
+# grocery= ['toothpaste','biscuit','jam','brush']
+# if 'book' in grocery:
+#     print('yes')
+# elif 'make' in grocery:
+#     print('noted')
+# else:
+#     print('love')
+
+#     love='bukola'
+#     print(love.upper())
+
+
+# num=[2,3,4,5,2,6,3,2,34]
+# figures=[]
+# for numbers in num:
+#     if numbers not in figures:
+#         figures.append(numbers)
+#     else:
+#         pass
+# print(figures)
+
+
+# num=['hello',24,35, "",40]
+# figure=[]
+# for numbers in num:
+
+#     if numbers !="":
+#         figure.append(numbers)
+# print(figure)
+
+
+str = [10, 20, 33, 46, 55]
+num= []
+k=[]
+for n in str:
+    if n%5==0:
+        num.append(n)
+    else:
+        k.append(n)
+print(num)
+print(k)
+
+
+
 
 
 
