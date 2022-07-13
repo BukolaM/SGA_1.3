@@ -5,8 +5,8 @@ def number(x,y):
     else:
         return output
 
-b = number (2,4)
-print (b)
+my_result = number (2,4)
+print (my_result)
 
 
 k= number(5,2)
