@@ -5,3 +5,10 @@ def maximum(numbers):
    
 max_var= maximum([10,9,70,4])
 print (max_var)
+
+
+
+
+
+
+ 
