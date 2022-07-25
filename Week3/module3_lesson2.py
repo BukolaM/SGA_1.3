@@ -26,14 +26,4 @@ class Car:
         self.car_seats = seats
 
 
-
-
-
-
-
-
-
-
-
-   
-
+    
