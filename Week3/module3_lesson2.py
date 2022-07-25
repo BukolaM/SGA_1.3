@@ -26,4 +26,18 @@ class Car:
         self.car_seats = seats
 
 
-    
+car_methods= Car
+print(car_methods.colour)  
+
+print(car_methods.wheels)  
+
+print(car_methods.year)  
+
+print(car_methods.brand)  
+
+print(car_methods.seats)  
+
+
+
+
+
