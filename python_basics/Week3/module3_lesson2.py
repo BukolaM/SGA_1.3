@@ -8,7 +8,7 @@ class Car:
     wheels = 4
     year = 2014
     brand = 'Ford'
-    seats = '6 - seater'
+    seats = 6 
 
     def car_colour(self, colour):
         self.colour = colour
