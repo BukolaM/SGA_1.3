@@ -38,6 +38,10 @@ print(car_methods.brand)
 print(car_methods.seats)  
 
 
-
+y = [6,4,2]
+x=[12,8,4]
+for k in x:
+    y.append(k)
+print (y)
 
 
