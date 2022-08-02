@@ -89,7 +89,6 @@ def most_celebrated():
             LIMIT 1 '''
     data = fetch_data(query)
     return data
-
 most_decorated_celebrity = most_celebrated()
 print(most_decorated_celebrity)
 
@@ -103,7 +102,6 @@ def oldest():
             LIMIT 1'''
     data = fetch_data(query)
     return data           
-
 oldest_celebrity= oldest()
 print(oldest_celebrity)
 
@@ -117,7 +115,6 @@ def longest_in_industry():
             LIMIT 1'''
     data = fetch_data(query)
     return data           
-
 longest_celebrity_in_industry= longest_in_industry()
 print(longest_celebrity_in_industry)
 
@@ -130,7 +127,6 @@ def least_album():
             LIMIT 1'''
     data = fetch_data(query)
     return data  
-
 celebrity_with_least_album= least_album()
 print(celebrity_with_least_album)
 
