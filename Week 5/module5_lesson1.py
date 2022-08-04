@@ -54,6 +54,7 @@ stationary_list = [
 # the highest to lowest cost price'''
 
 
+#function to get list of items from the table
 def fetch_data(sql_query):
     cursor.execute(sql_query)
     list=cursor.fetchall()
