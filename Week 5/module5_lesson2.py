@@ -94,7 +94,7 @@ average_english()
 
 # 5. Who is the best performing student across all nine subjects in terms of overall scores
 def highest_overall_scores(): 
-    query = ''' SELECT first_name , last_name , (((General_Mathematics + English_Language + Chemistry + Physics + Economics + Geography + Biology + Agricultural_Science + Further_Mathematics) / (900) ) * 100) AS TOTAL_PERCENTAGE
+    query = ''' SELECT first_name , last_name , ( ROUND( ( ( General_Mathematics + English_Language + Chemistry + Physics + Economics + Geography + Biology + Agricultural_Science + Further_Mathematics) / (900) ) * 100) )  AS TOTAL_PERCENTAGE
                 FROM Scores
                 ORDER BY TOTAL_PERCENTAGE DESC
                 LIMIT 1'''               
@@ -106,7 +106,7 @@ highest_overall_scores()
 
 # 6. Who is the best performing student across all nine subjects in term of average scores
 def highest_avg_scores(): 
-    query = ''' SELECT first_name , last_name , ((General_Mathematics + English_Language + Chemistry + Physics + Economics + Geography + Biology + Agricultural_Science + Further_Mathematics) / (9) )  AS AVERAGE_PERCENTAGE
+    query = ''' SELECT first_name , last_name , (ROUND((General_Mathematics + English_Language + Chemistry + Physics + Economics + Geography + Biology + Agricultural_Science + Further_Mathematics) / (9) ))  AS AVERAGE_PERCENTAGE
                 FROM Scores
                 ORDER BY AVERAGE_PERCENTAGE DESC
                 LIMIT 1 ''' 
