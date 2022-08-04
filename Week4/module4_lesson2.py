@@ -60,16 +60,6 @@ for item in item:
 
 
 
-
-
-
-
-
-
-
-
-
-
  # ##ALTER from a row
 # cursor.execute('ALTER TABLE students_list RENAME TO ')
 # conn.commit()

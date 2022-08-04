@@ -1,5 +1,6 @@
 with open ('/Users/bukola/Downloads/dummy_celebrity_dataset.csv') as file:
     dummy_celebrity = file.read()
+    print(dummy_celebrity)
  
 
 dummy_celebrity_data = dummy_celebrity.split('\n')

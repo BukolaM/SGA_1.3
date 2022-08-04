@@ -72,8 +72,8 @@ celebrity_list = [
 
 
 #function to get list of items from the table
-def fetch_data(list):
-    cursor.execute(list)
+def fetch_data(sql_query):
+    cursor.execute(sql_query)
     list=cursor.fetchall()
     result = []
     for item in list:
@@ -82,13 +82,11 @@ def fetch_data(list):
 
 # 1. ##Who is the most decorated celebrity
 def most_celebrated():
-    query = '''SELECT DISTINCT Name, SUM(Awards) 
-            FROM Celebrity 
-            GROUP BY Name 
-            ORDER BY SUM(Awards) DESC
-            LIMIT 1 '''
+    query = '''SELECT DISTINCT Name
+                FROM Celebrity''' 
     data = fetch_data(query)
     return data
+
 most_decorated_celebrity = most_celebrated()
 print(most_decorated_celebrity)
 
@@ -143,8 +141,10 @@ def music_genre():
 most_popular_music_genre = music_genre()
 print(most_popular_music_genre)
 
-
-
+# SUM(Awards) 
+#  GROUP BY Name 
+#             ORDER BY SUM(Awards) DESC
+#             LIMIT 1 '''
 
 
 
