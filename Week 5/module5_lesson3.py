@@ -69,10 +69,8 @@ total_amount_invested()
 
 # 2. Calculate the average quantity of items in stock.
 def avg_quantity_of_itemsinstock():
-    query = '''SELECT Stationary_Item, AVG(Stock_on_hand)/25
+    query = '''SELECT AVG(Stock_on_hand)
                 FROM Stationaries
-                GROUP BY Stationary_Item
-                ORDER BY AVG(Stock_on_hand)/25
             '''
     data = fetch_data(query)
     return data
