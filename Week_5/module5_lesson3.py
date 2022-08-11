@@ -53,32 +53,36 @@ stationary_list = [
 def fetch_data(sql_query):
     cursor.execute(sql_query)
     list=cursor.fetchall()
+    result = []
     for item in list:
-        print(item)
+        result.append(item)
+    return result
 
 
 # 1. Calculate the amount the business owner invested in the procurement of the items.   
-def total_amount_invested():
+def amount_invested():
     query = '''SELECT SUM(Unit_Price)
             FROM Stationaries
             '''
     data = fetch_data(query)
     return data
-total_amount_invested()
+total_amount_invested = amount_invested()
+print ( total_amount_invested)
 
 
 # 2. Calculate the average quantity of items in stock.
-def avg_quantity_of_itemsinstock():
+def quantity_of_itemsinstock():
     query = '''SELECT AVG(Stock_on_hand)
                 FROM Stationaries
             '''
     data = fetch_data(query)
     return data
-avg_quantity_of_itemsinstock()
+avg_quantity_of_itemsinstock = quantity_of_itemsinstock()
+print(avg_quantity_of_itemsinstock)
 
 
 # 3. Determine the item with the least quantity in stock
-def least_quantity_instock():
+def quantity_instock():
     query = '''SELECT Stationary_Item, MIN(Stock_on_hand)
             FROM Stationaries
             GROUP BY Stationary_Item
@@ -87,11 +91,13 @@ def least_quantity_instock():
             '''
     data = fetch_data(query)
     return data
-least_quantity_instock()
+least_quantity_instock = quantity_instock()
+print(least_quantity_instock)
+
 
 
 # #4. Determine the item with the most quantity in stock
-def most_quantity_instock():
+def quantity_inStock():
     query = '''SELECT Stationary_Item, MAX(Stock_on_hand)
             FROM Stationaries
             GROUP BY Stationary_Item
@@ -100,7 +106,8 @@ def most_quantity_instock():
             '''
     data = fetch_data(query)
     return data
-most_quantity_instock()
+most_quantity_inStock = quantity_inStock()
+print(most_quantity_inStock)
 
 
 

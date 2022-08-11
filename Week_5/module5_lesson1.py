@@ -58,11 +58,13 @@ stationary_list = [
 def fetch_data(sql_query):
     cursor.execute(sql_query)
     list=cursor.fetchall()
+    result = []
     for item in list:
-        print(item)
+        result.append(item)
+    return result
        
     
-def items_to_restock():
+def to_restock():
     query = '''SELECT DISTINCT Stationary_Item, SUM(Unit_Price),
                 CASE
                 WHEN SUM(Stock_on_hand) < SUM(Threshold_to_restock) THEN "Restock"
@@ -75,7 +77,9 @@ def items_to_restock():
     data = fetch_data(query)
     return data
 
-items_to_restock()
+items_to_restock = to_restock()
+for items in items_to_restock:
+    print(items)
 
 
 
