@@ -4,4 +4,4 @@ venv/
 SALARY_DATASET_SQL/
 SQLite3/
 .DS_Store
-sql_main/
+sql_main
