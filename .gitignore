@@ -1,3 +1,6 @@
 venv/
 *.db
 *.csv
+SALARY_DATASET_SQL/
+SQLite3/
+
