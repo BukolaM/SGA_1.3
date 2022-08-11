@@ -25,9 +25,9 @@ Further_Mathematics float
 with open ('/Users/bukola/Downloads/WAEC Results.csv', "r") as file_list:
     read_file = csv.reader(file_list)
     next(read_file)
-
-    cursor.executemany('''INSERT INTO Scores VALUES(?, ?, ?, ?, ? ,?, ?, ?, ?, ?, ?)''', read_file)
-    conn.commit()
+    
+    # cursor.executemany('''INSERT INTO Scores VALUES(?, ?, ?, ?, ? ,?, ?, ?, ?, ?, ?)''', read_file)
+    # conn.commit()
 
 
 # cursor.execute('SELECT * FROM Scores')
@@ -45,8 +45,10 @@ with open ('/Users/bukola/Downloads/WAEC Results.csv', "r") as file_list:
 def fetch_data(sql_query):
     cursor.execute(sql_query)
     items = cursor.fetchmany(20)
+    result = []
     for item in items:
-        print(item)
+        result.append(item)
+    return result
 
 
 # 1. Which student scored the highest in maths
@@ -59,8 +61,10 @@ def highest_math():
                 '''
     data = fetch_data(query)  
     return data
-highest_math()
+s_highest_maths = highest_math()
+print(s_highest_maths)
 # pls note there are two students with the same highest scores, hence why i had to limit to two
+
 
 # 2.Which student scored the lowest in english
 def lowest_english(): 
@@ -71,7 +75,9 @@ def lowest_english():
                 LIMIT 1'''            
     data = fetch_data(query)  
     return data
-lowest_english()
+s_lowest_eng = lowest_english()
+print(s_lowest_eng)
+
 
 
 #3. What is the average score of students in maths
@@ -80,7 +86,8 @@ def average_maths():
                 FROM Scores'''              
     data = fetch_data(query)  
     return data
-average_maths()
+s_average_maths = average_maths()
+print(s_average_maths)
 
 
 # 4. What is the average score of students in english
@@ -89,7 +96,8 @@ def average_english():
                 FROM Scores '''              
     data = fetch_data(query)  
     return data
-average_english()
+s_average_english = average_english()
+print(s_average_english)
 
 
 # 5. Who is the best performing student across all nine subjects in terms of overall scores
@@ -100,7 +108,9 @@ def highest_overall_scores():
                 LIMIT 1'''               
     data = fetch_data(query)  
     return data
-highest_overall_scores()
+s_highest_overall_scores = highest_overall_scores()
+print(s_highest_overall_scores)
+
 
 
 
@@ -112,7 +122,8 @@ def highest_avg_scores():
                 LIMIT 1 ''' 
     data = fetch_data(query)  
     return data
-highest_avg_scores()
+s_highest_avg_scores = highest_avg_scores()
+print(s_highest_avg_scores)
 
 
 

@@ -1,0 +1,21 @@
+WORK_IN_COUNTRY,SUM(ANNUAL_SALARY)
+Turkey,72
+Bosnia,6500
+Nigeria,7390
+Cuba,9600
+Kuwait,13560
+Russia,15000
+Serbia,23400
+Cambodia,24000
+Morocco,28000
+Jordan,34000
+Slovenia,37400
+Chile,38000
+Afghanistan,41000
+Malta,42000
+Europe,42000
+Jamaica,45000
+"San Francisco",48000
+Estonia,54360
+Somalia,58000
+Catalonia,60000
