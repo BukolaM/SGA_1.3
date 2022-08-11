@@ -3,4 +3,4 @@ venv/
 *.csv
 SALARY_DATASET_SQL/
 SQLite3/
-
+.DS_Store
