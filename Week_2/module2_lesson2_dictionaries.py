@@ -27,14 +27,16 @@
 
 ##----------------------------------------------------------------
 
-def within_range(m):
-    y=range(5)
-    if 6 in y:
-        print ('no')
-    else:
-        print ('yes')
+# def within_range(m):
+y=range(5)
+for x in y:
+    print(x)
+#    if m in y:
+# #         print ('no')
+# #     else:
+# #         print ('yes')
 
-within_range(2)
+# # within_range(2)
 
 
 
