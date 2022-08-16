@@ -23,25 +23,17 @@ class Car:
         self.brand = brand
 
     def car_seats(self, seats):
-        self.car_seats = seats
+        self.seats = seats
 
 
-car_methods= Car
-print(car_methods.colour)  
+car_obj = Car()
+print(car_obj.colour)  
 
-print(car_methods.wheels)  
+print(car_obj.wheels)  
 
-print(car_methods.year)  
+print(car_obj.year)  
 
-print(car_methods.brand)  
+print(car_obj.brand)  
 
-print(car_methods.seats)  
-
-
-y = [6,4,2]
-x=[12,8,4]
-for k in x:
-    y.append(k)
-print (y)
-
+print(car_obj.seats)  
 
