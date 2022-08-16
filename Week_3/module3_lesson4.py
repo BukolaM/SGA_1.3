@@ -24,15 +24,18 @@ class BankAccount:
         return self.account_balance
 
 
-
 y = BankAccount()
 y.set_details('bukola', 'ajayi', '202020202')
 
+
+#setting to withdrawal
 y.withdrawal(40000)
 print(y.account_balance)
 
 
-
+#setting to deposit
 y.deposit(90000)
 print (y.account_balance)
+
+
     
