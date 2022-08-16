@@ -26,17 +26,13 @@ class BankAccount:
 
 
 y = BankAccount()
+y.set_details('bukola', 'ajayi', '202020202')
 
-y.set_details('tosin', 'adesipe', '202020202')
-
-# y.withdrawal(40000)
-
+y.withdrawal(40000)
 print(y.account_balance)
 
 
-# print(y.account_balance)
 
-
-# y.deposit(90000)
-# print (y.account_balance)
+y.deposit(90000)
+print (y.account_balance)
     
