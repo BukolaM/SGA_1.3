@@ -8,6 +8,6 @@ df = pd.read_csv('/Users/bukola/Downloads/Movies.csv')
 print(df)
 
 # Write data into the table in sqllite database
-# df.to_sql('infod', engine)
+df.to_sql('movies_data', engine)
 
 

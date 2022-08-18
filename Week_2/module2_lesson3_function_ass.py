@@ -1,4 +1,4 @@
-##Write a python program to generate and print a dictionary containing keys ranging from 5 to 15 (with both numbers included) and the values are the squares of the keys
+#Write a python program to generate and print a dictionary containing keys ranging from 5 to 15 (with both numbers included) and the values are the squares of the keys
 
 def numbers(number_range):
     numbers_key_values={}
@@ -15,6 +15,20 @@ def numbers(number_range):
 
 result= numbers(range(5,16))
 print(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
