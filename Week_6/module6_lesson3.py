@@ -14,7 +14,7 @@ arr = np.array(even_numbers)
 result = np.lcm.reduce(arr)
 print(result)
 #'''the challenge with this is that when it got to number 84 and above the result start shifting 
-# from positive to negative and was found that numpy.lcm() function can't handle large numbers'''
+# from positive to negative, I researched and found out that numpy.lcm() function can't handle large numbers'''
 
 
 
