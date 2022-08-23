@@ -60,15 +60,7 @@ for item in item:
 
 
 
- # ##ALTER from a row
-# cursor.execute('ALTER TABLE students_list RENAME TO ')
-# conn.commit()
-# print('success')
 
-#delete from row
-# cursor.execute(" DELETE FROM Students where rowid= '1' ")
-# conn.commit
-# print('success')
 
 
 
