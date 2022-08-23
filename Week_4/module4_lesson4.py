@@ -141,10 +141,6 @@ def music_genre():
 most_popular_music_genre = music_genre()
 print(most_popular_music_genre)
 
-# SUM(Awards) 
-#  GROUP BY Name 
-#             ORDER BY SUM(Awards) DESC
-#             LIMIT 1 '''
 
 
 
