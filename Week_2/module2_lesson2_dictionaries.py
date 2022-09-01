@@ -15,17 +15,6 @@ y= the_square_of_number_range(range(6))
 print (y)
 
 
-##------------------------------------------------------
-
-def mul(n):
-    total=1
-    for y in n:
-      total= total*y
-    print(total)
-
-mul(range(1,4))
-
-##----------------------------------------------------------------
 
 
 
