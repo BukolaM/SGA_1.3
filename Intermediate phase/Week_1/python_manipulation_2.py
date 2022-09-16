@@ -35,11 +35,11 @@ print(result)
 
 
 
-#3. Perform a while loop that requests for a name, if that name is entered, it will be printed else, if user types “end” (this command should be case insensitive), the while loop is terminated
+# #3. Perform a while loop that requests for a name, if that name is entered, it will be printed else, if user types “end” (this command should be case insensitive), the while loop is terminated
 item = True
 
 while item == True:
-    print('What is your name:' )
+    print('What is your name?', )
     name = input()
 
     if name.lower() == 'end':
