@@ -50,3 +50,5 @@ for i in item:
     value = i ** 3
     item_list[key] = value
 print(item_list)
+
+
