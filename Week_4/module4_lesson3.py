@@ -63,14 +63,14 @@ students_list = [
 
 
 # # Add a new column
-# cursor.execute('ALTER TABLE students_details ADD students_bonus')
-# conn.commit()
-# print('success')
+cursor.execute('ALTER TABLE students_details ADD students_bonus')
+conn.commit()
+print('success')
 
 # # Use the update statement to add values to the new column 
-# cursor.execute('UPDATE students_details SET students_bonus = 1000')
-# conn.commit()
-# print('bonus added')
+cursor.execute('UPDATE students_details SET students_bonus = 1000')
+conn.commit()
+print('bonus added')
 
 #test and run codes
 cursor.execute('SELECT * FROM students_details')
