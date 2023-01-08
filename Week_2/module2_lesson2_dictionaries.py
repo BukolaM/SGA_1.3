@@ -11,7 +11,7 @@ def the_square_of_number_range(x):
        result[key] = value
     return result
 
-y= the_square_of_number_range(range(6))
+y= the_square_of_number_range(range(5))
 print (y)
 
 
