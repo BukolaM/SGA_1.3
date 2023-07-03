@@ -16,3 +16,5 @@ def num_2(x):
 y = num_2(range(5))
 print(y)
 
+
+
